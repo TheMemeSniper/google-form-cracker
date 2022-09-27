@@ -2,7 +2,7 @@
 AIM-9 Sidewinder for google forms
 
 # What does it do?
-This program seeks for ```quot``` in a Google Form's mhtml source code. When found, it will be written to output.txt
+This program seeks for ```quot``` in a Google Form's mhtml source code. Google Forms uses ```quot``` for response validation, so we dump the entire line containing the keyword to get the response validation condition.
 
 This program can break the following forms:
 - Escape Rooms
@@ -11,7 +11,7 @@ This program can break the following forms:
 
 # How do I read this?
 
-This program outputs the full line it finds ```quot``` on, since ```quot``` is used by Google Forms to indicate most response validation options, this will also dump the answer to that question.
+The output may look a bit scary, but it's easily decoded. Your answer should usually be after the question text.
 
 # Where do I find the .mhtml source code?
 
